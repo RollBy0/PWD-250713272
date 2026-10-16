@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(32, 99, 174);
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(228, 232, 236);
+    padding: 20px 0;
+    margin: 0;
+}
+
+#embedded p {
+    font-size: 18px;
+    color: rgb(42, 141, 255);
+    margin: 10px 0;
+}
+
+#embedded img {
+    border: 5px solid rgb(42, 141, 255);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#embedded a {
+    text-decoration: none;
+    color: rgb(42, 141, 255);
+    margin: 10px 0;
+}
+
