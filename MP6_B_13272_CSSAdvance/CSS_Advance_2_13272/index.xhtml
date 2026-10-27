@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Formulir Pengiriman Barang Dalam Negeri</title>
+  </head>
+    <body>
+        <h1>Formulir Pengiriman Barang Dalam Negeri</h1>
+        <form action="" method="POST" enctype="multipart/form-data">
+            
+            <h2>Data Pengirim</h2>
+            <table cellspacing="4" cellpadding="4" border="1"
+                style="border-collapse:collapse; width:100%;">
+                <tr>
+                    <td style="width:32%;">
+                        <label for="nama_pengirim"><strong>Nama Pengirim</strong></label>
+                    </td>
+                    <td><input type="text" id="nama_pengirim" name="nama_pengirim" size="30" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telepon_pengirim"><strong>Nomor Telepon</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="telepon_pengirim" name="telepon_pengirim" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email_pengirim"><strong>Email</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="email_pengirim" name="email_pengirim" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="alamat_pengirim"><strong>Alamat Pengirim</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="alamat_pengirim" name="alamat_pengirim" rows="3" cols="30"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Detail Pengiriman</h2>
+            <table cellspacing="4" cellpadding="4" border="1"
+                style="border-collapse:collapse; width:100%;">
+                <tr>
+                    <td style="width:32%;"><strong>Layanan Pengiriman</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="reguler" name="layanan" value="Reguler" />
+                        <label for="reguler">Reguler</label>
+
+                        <input type="radio" id="kilat" name="layanan" value="Kilat" />
+                        <label for="kilat">Kilat</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;">
+                        <strong>Jenis Barang</strong>
+                    </td>
+                    <td>
+                        <p>
+                            <input type="checkbox" id="dokumen" name="jenis_barang" value="Dokumen" />
+                            <label for="dokumen">Dokumen</label><br />
+                        </p>
+                        <p>
+                            <input type="checkbox" id="paket" name="jenis_barang" value="Paket" />
+                            <label for="paket">Paket</label><br />
+                        </p>
+                        <p>
+                            <input type="checkbox" id="pecah_belah" name="jenis_barang" value="Pecah Belah" />
+                            <label for="pecah_belah">Barang pecah belah</label><br />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Data Penerima dan Pembayaran</h2>
+            <table cellspacing="4" cellpadding="4" border="1"
+                style="border-collapse:collapse; width:100%;">
+                 <tr>
+                    <td style="vertical-align: middle; width:32%;">
+                        <label for="data_penerima"><strong>Detail Penerima</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="data_penerima" name="data_penerima" rows="5" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="berat"><strong>Berat Barang (kg)</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="berat" name="berat" size="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Metode Pembayaran</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="qris" name="metode_pembayaran" value="QRIS" />
+                        <label for="qris">QRIS</label>
+
+                        <input type="radio" id="bank" name="metode_pembayaran" value="Transfer Bank" />
+                        <label for="bank">Transfer Bank</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" name="kirim" value="Buat Pesanan Pengiriman" />
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>

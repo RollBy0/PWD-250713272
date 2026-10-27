@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Formulir Pendataan Pegawai</title>
+  </head>
+    <body>
+        <h1>Formulir Pendataan Pegawai</h1>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <table cellspacing="4" cellpadding="4" border="1"
+                style="border-collapse:collapse; width:100%;">
+                <tr>
+                    <td>
+                        <label for="nama"><strong>Nama Lengkap</strong></label>
+                    </td>
+                    <td><input type="text" id="nama" name="nama" size="30" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nomor-pegawai"><strong>Nomor Pegawai</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nomor-pegawai" name="nomor_pegawai" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="perusahaan"><strong>Asal Perusahaan</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="perusahaan" name="perusahaan" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email"><strong>Alamat Email</strong></label>
+                    </td>
+                    <td><input type="text" id="email" name="email" size="30" /></td>
+                </tr>
+                <tr>
+                    <td><label for="telepon"><strong>Nomor Telepon</strong></label>
+                    </td>
+                    <td><input type="text" id="telepon" name="telepon" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Jenis Kelamin</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+                        <label for="laki">Laki-Laki</label>
+
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tahun-masuk"><strong>Tahun Masuk Kerja</strong></label>
+                    </td>
+                    <td>
+                        <select id="tahun-masuk" name="tahun_masuk">
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                            <option>1989</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jobdesk"><strong>Jobdesk</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="jobdesk" name="jobdesk" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;">
+                        <label for="deskripsi-jobdesk"><strong>Deskripsi Jobdesk</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="deskripsi-jobdesk" name="deskripsi_jobdesk" 
+                                rows="8" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cv"><strong>Upload CV</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="cv" name="cv" 
+                                accept="application/pdf" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" name="kirim" value="Kirim Data" />
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
